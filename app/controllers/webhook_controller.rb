@@ -1,5 +1,5 @@
 class WebhookController < ApplicationController
-	require 'line/bot'  # gem 'line-bot-api'
+    require 'line/bot'  # gem 'line-bot-api'
 
     protect_from_forgery except: [:callback] # CSRF対策無効化
 
@@ -34,7 +34,6 @@ class WebhookController < ApplicationController
         end
       end
 
-      "OK"
+      head :ok
     end
-end
 end
